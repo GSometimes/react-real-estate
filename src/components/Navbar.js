@@ -37,7 +37,6 @@ const Nav = styled.div`
   z-index: 100;
   position: fixed;
   width: 100%;
-  background: tomato;
 `;
 
 const NavLink = css`
