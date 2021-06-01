@@ -1,5 +1,4 @@
 import React from "react";
-import { FaHeading } from "react-icons/fa";
 import styled from "styled-components";
 import { Button } from "./Button";
 
