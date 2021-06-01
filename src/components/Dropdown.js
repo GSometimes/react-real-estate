@@ -7,7 +7,7 @@ import { Button } from "./Button";
 
 const Dropdown = ({ isOpen, toggle }) => {
   return (
-    <DropdownContainer isOpen={isOpen} toggle={toggle}>
+    <DropdownContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -39,10 +39,11 @@ const DropdownContainer = styled.div`
   background: #cd853f;
   display: grid;
   align-items: center;
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
 const Icon = styled.div`
