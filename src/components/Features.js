@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Button } from "./Button";
 import ImageOne from "../images/kitchen-1.jpg";
 
@@ -26,7 +26,14 @@ const Features = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 euismod.
               </p>
-              <Button to="/homes">Learn More</Button>
+              <Button
+                to="/homes"
+                css={`
+                  color: #fff;
+                `}
+              >
+                Learn More
+              </Button>
             </Content>
           </ColumnLeft>
           <ColumnRight>

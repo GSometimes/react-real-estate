@@ -31,13 +31,13 @@ const Navbar = ({ toggle }) => {
 
   let style = {
     backgroundColor:
-      navbar || location.pathname !== "/" ? "#CD853F" : "transparent",
+      navbar || location.pathname !== "/" ? "#116466" : "transparent",
     transition: "0.4s",
   };
 
   return (
     <Nav style={style}>
-      <Logo to="/">ELIXR</Logo>
+      <Logo to="/">ABODE</Logo>
       <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
